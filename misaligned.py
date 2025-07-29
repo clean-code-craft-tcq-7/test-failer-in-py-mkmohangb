@@ -7,7 +7,7 @@ def print_color_map():
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
-            print(f'{color_index_to_pair_number(major, minor)} | {major} | {minor}')
+            print(f'{color_index_to_pair_number(i, j)} | {major} | {minor}')
     return len(major_colors) * len(minor_colors)
 
 
